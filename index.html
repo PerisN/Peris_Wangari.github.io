@@ -1,166 +1,468 @@
-<!DOCTYPE HTML>
-<!--
-	Massively by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
--->
-<html>
-	<head>
-		<title>PERIS WANGARI</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="assets/css/main.css" />
-		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
-	</head>
-	<body class="is-preload">
+htmlCopy<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PERIS WANGARI | PORTFOLIO</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
 
-		<!-- Wrapper -->
-		<div id="intro">
-			<div class="intro-content">
-				<h1>PERIS WANGARI PORTFOLIO</h1>
-					<p><em>Navigating the data universe with analytical finesse</em></p>
-					<ul class="actions">
-						<li><a href="#header" class="button icon solid solo fa-arrow-down scrolly">Continue</a></li>
-					</ul>
-			</div>
-			
-		</div>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar" role="navigation" aria-label="Main Navigation">
+        <ul class="nav-links">
+            <li><a href="#about">ABOUT</a></li>
+            <li><a href="#skills">SKILLS</a></li>
+            <li><a href="#projects">PROJECTS</a></li>
+            <li><a href="#contact">CONTACT</a></li>
+        </ul>
+    </nav>
+    
+    <div id="section-dots" class="section-navigation"></div>
 
-				<!-- Header --> 
-					<header id="header">
-						<a href="index.html" class="logo"> PERIS WANGARI</a>
-					</header>
+    <section id="about" class="about fade-in">
+        <div class="about-content">
+            <!-- Profile Image -->
+            <div class="about-img-container">
+                <img src="assets/images/laptop.png" alt="My Profile Picture" class="about-img slide-in-left">
+            </div>
+    
+            <!-- Introduction Text -->
+            <div class="about-text slide-in-right">
+                <h1>Hello 👋, I'm <span class="highlight">Peris!</span> </h1>
+                <p>Data Scientist and Analyst with 2+ years of experience turning complex data into actionable insights that drive smarter decisions and impact.</p>
+                <p>With a background in finance and experience in fintech and retail, I understand how data drives real business decisions. Whether it’s building models, visualizing insights or cleaning up messy datasets, I’m always focused on making data useful.</p>
+                <p>Outside of data, I’m usually talking to my cat and plants or chasing down a creative idea.</p>
+                <p>My ideal role? One where I can keep learning, contribute to impactful projects and help organizations make smarter, data-driven decisions.</p>
+                <!-- Buttons -->
+                <div class="about-buttons">
+                    <a href="assets/CV.pdf" download class="about-button">Download CV</a>
+                    <a href="#contact" class="about-button">Get in Touch</a>
+                </div>
+            </div>
+        </div>
+    </section>
 
-				<!-- Nav -->
-					<nav id="nav">
-						<ul class="links">
-							<li class="active"><a href="index.html">PROJECTS</a></li>
-							<li><a href="generic.html">BLOG</a></li>
-							<!-- <li><a href="elements.html">Elements Reference</a></li> -->
-						</ul>
-						<ul class="icons">
-							<li><a href="https://www.linkedin.com/in/periswangari/" target="_blank" class="icon brands fa-linkedin"><span class="label">LinkedIn</span></a></li>
-							<li><a href="https://github.com/PerisN" target="_blank" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
-						</ul>
-						
-						</nav>
 
-				<!-- Main -->
-					<div id="main">
+    <!-- Skills Section -->
+    <section id="skills" class="skills-section">
+      <div class="section-heading">
+        <h2>My Skills</h2>
+        <div class="heading-line"></div>
 
-						<!-- Featured Post -->
-							<article class="post featured">
-								<header class="major">
-									<!--<span class="date">April 25, 2017</span> -->
-									<h2><a href="https://github.com/PerisN/Predict-Laptop-Prices-Streamlit" alt="Github Repo" target="_blank">Price PredictorX <br />
-								</a></h2>
-									<p>The PricePredictorX is an innovative project leveraging machine learning (ML) to predict laptop prices with high accuracy. Through a streamlined application developed using Streamlit, users can effortlessly estimate the price of laptops based on various features. This project also incorporates robust MLOps practices, utilizing MLFlow to ensure seamless model deployment, monitoring, and tracking.</p>
-								</header>
-								<a href="https://github.com/PerisN/Predict-Laptop-Prices-Streamlit" target="_blank" class="image main"><img src="images/laptop.png" style="width: 1200px; height: 700px;"/></a>
-								<ul class="actions special">
-									<li><a href="https://github.com/PerisN/Predict-Laptop-Prices-Streamlit" target="_blank" class="button large">VIEW PROJECT</a></li>
-								</ul>
-							</article>
+        <div class="filter-pills-wrapper">
+          <div class="filter-pills">
+            <button class="filter-pill active" data-filter="data-analysis">Data Analysis</button>
+            <button class="filter-pill" data-filter="business-analysis">Business Analysis</button>
+            <button class="filter-pill" data-filter="data-science">Data Science</button>
+          </div>
+        </div>
+      </div>
 
-						<!-- Posts -->
-							<section class="posts">
-								<article>
-									<header>
-										<!-- <span class="date">April 24, 2017</span> -->
-										<h2><a href="https://public.tableau.com/app/profile/peris/viz/LoanLens/SUMMARY?publish=yes" target="_blank">LoanLens : BANK LOAN ANALYSIS USING SQL & TABLEAU<br />
-										</a></h2>
-									</header>
-									<a href="https://public.tableau.com/app/profile/peris/viz/LoanLens/SUMMARY?publish=yes" target="_blank" class="image fit"><img src="images/IMG_1339.jpg" alt="LoanLens Report" /></a>
-									<p>LoanLens is a robust analysis project designed to offer valuable insights into bank loan portfolios. By leveraging SQL queries, it extracts, transforms, and analyzes data pertaining to loan performance, customer demographics, repayment trends, and risk factors. These insights are then translated into dynamic visualizations using Tableau, enabling stakeholders to explore loan data visually and uncover key trends and patterns. LoanLens empowers banks to make informed decisions regarding risk assessment and portfolio management, ultimately optimizing lending practices and enhancing financial performance..</p>
-									<ul class="actions special">
-										<li><a href="https://github.com/PerisN/LoanLens/tree/main" target="_blank" class="button">VIEW PROJECT</a></li>
-										<li><a href="https://public.tableau.com/app/profile/peris/viz/LoanLens/SUMMARY?publish=yes" target="_blank" class="button">VIEW REPORT</a></li>
-									</ul>
-								</article>
-								<article>
-									<header>
-										<!-- <span class="date">April 24, 2017</span> -->
-										<h2><a href="https://github.com/PerisN/Finding-the-Nearest-Pub" target="_blank">PubFinda : An app that helps you find the nearest pub<br />
-										</a></h2>
-									</header>
-									<a href="https://github.com/PerisN/Finding-the-Nearest-Pub" target="_blank" class="image fit"><img src="images\unnamed.jpg" alt="Find the Nearest Pub" /></a>
-									<p>PubFinda is your go-to web application for finding the nearest open pub by location, ensuring you have a great time and options while staying safe. Not only does the app locate the closest pubs, but it also provides information about the Local authority that the pub falls under, giving you peace of mind during your night out.</p>
-									<ul class="actions special">
-										<li><a href="https://github.com/PerisN/Finding-the-Nearest-Pub" target="_blank" class="button">VIEW PROJECT</a></li>
-									</ul>
-								</article>
-								
-							</section>
+      <div class="skills-wrapper">
+        <div class="cards-container">
+          <!-- Side navigation buttons -->
+          <div class="card-navigation">
+            <button class="prev-button" disabled>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><path d="M15 18l-6-6 6-6"></path></svg>
+            </button>
+            <button class="next-button">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><path d="M9 18l6-6-6-6"></path></svg>
+            </button>
+          </div>
 
-						<!-- Footer  -->
-							<!-- <footer>
-								<div class="pagination"> -->
-									<!--<a href="#" class="previous">Prev</a>
-									<a href="#" class="page active">1</a>
-									<a href="#" class="page">2</a>
-									<a href="#" class="next">Next</a>
-								</div>
-							</footer> -->
+          <div class="skills-display" id="skillsDisplay">
+            <!-- Data Analysis Skills -->
+            <div class="skill-card" data-category="data-analysis" data-index="0">
+              <div class="skill-card-inner">
+                <div class="skill-icon">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M21 21H4.6c-.56 0-1.08-.29-1.37-.76-.29-.48-.29-1.08 0-1.56l7.73-12.77c.56-.93 1.92-.93 2.48 0L21 21zM3 9l3-4.5M21 9l-3-4.5"></path></svg>
+                </div>
+                <div class="skill-content">
+                  <h3>Data Processing</h3>
+                  <p>Transforming raw data into meaningful insights through cleaning, normalization, and structuring.</p>
+                  <div class="skill-tags">
+                    <span class="tag">Excel</span>
+                    <span class="tag">SQL</span>
+                    <span class="tag">Power Query</span>
+                    <span class="tag">ETL</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+  
+            <div class="skill-card" data-category="data-analysis" data-index="1">
+              <div class="skill-card-inner">
+                <div class="skill-icon">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M21 21H3V3h18v18z"></path><path d="M3 16.5h18M3 12h18M3 7.5h18M16.5 21V3M12 21V3M7.5 21V3"></path></svg>
+                </div>
+                <div class="skill-content">
+                  <h3>Data Visualization</h3>
+                  <p>Creating clear, impactful visual representations of complex data sets for better decision making.</p>
+                  <div class="skill-tags">
+                    <span class="tag">Tableau</span>
+                    <span class="tag">Power BI</span>
+                    <span class="tag">Matplotlib</span>
+                    <span class="tag">Seaborn</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+            <div class="skill-card" data-category="data-analysis" data-index="2">
+              <div class="skill-card-inner">
+                <div class="skill-icon">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M18 20V10M12 20V4M6 20v-6"></path></svg>
+                </div>
+                <div class="skill-content">
+                  <h3>Statistical Analysis</h3>
+                  <p>Applying statistical methods to interpret data and uncover trends, patterns and correlations.</p>
+                  <div class="skill-tags">
+                    <span class="tag">Hypothesis Testing</span>
+                    <span class="tag">Regression</span>
+                    <span class="tag">A/B Testing</span>
+                    <span class="tag">ANOVA</span>
+                  </div>
+                </div>
+              </div>
+            </div>
 
-					</div>
+            <!-- Business Analysis Skills -->
+            <div class="skill-card" data-category="business-analysis" data-index="0">
+              <div class="skill-card-inner">
+                <div class="skill-icon">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M9 18h6M10 22h4M8 3h8a2 2 0 012 2v13a2 2 0 01-2 2H8a2 2 0 01-2-2V5a2 2 0 012-2z"></path><path d="M12 15.5a1.5 1.5 0 100-3 1.5 1.5 0 000 3z"></path></svg>
+                </div>
+                <div class="skill-content">
+                  <h3>Requirements Analysis</h3>
+                  <p>Collecting, documenting, and analyzing business requirements to drive effective solutions.</p>
+                  <div class="skill-tags">
+                    <span class="tag">BPMN</span>
+                    <span class="tag">Use Cases</span>
+                    <span class="tag">User Stories</span>
+                    <span class="tag">Gap Analysis</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+            <div class="skill-card" data-category="business-analysis" data-index="1">
+              <div class="skill-card-inner">
+                <div class="skill-icon">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M16 16L12 12L8 16"></path><path d="M12 12V21"></path><path d="M20.39 18.39A5 5 0 0018 9h-1.26A8 8 0 103 16.3"></path><path d="M16 16L12 12L8 16"></path></svg>
+                </div>
+                <div class="skill-content">
+                  <h3>Process Improvement</h3>
+                  <p>Optimizing business processes to increase efficiency, reduce costs, and improve outcomes.</p>
+                  <div class="skill-tags">
+                    <span class="tag">Lean Six Sigma</span>
+                    <span class="tag">Process Mapping</span>
+                    <span class="tag">KPI Development</span>
+                    <span class="tag">SWOT Analysis</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+            <div class="skill-card" data-category="business-analysis" data-index="2">
+              <div class="skill-card-inner">
+                <div class="skill-icon">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 1v22M17 5H9.5a3.5 3.5 0 000 7h5a3.5 3.5 0 010 7H6"></path></svg>
+                </div>
+                <div class="skill-content">
+                  <h3>Financial Analysis</h3>
+                  <p>Evaluating financial data to support strategic decision-making and business planning.</p>
+                  <div class="skill-tags">
+                    <span class="tag">ROI Analysis</span>
+                    <span class="tag">Cost-Benefit</span>
+                    <span class="tag">Forecasting</span>
+                    <span class="tag">Financial Modeling</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          
+            <!-- Data Science Skills -->
+            <div class="skill-card" data-category="data-science" data-index="0">
+              <div class="skill-card-inner">
+                <div class="skill-icon">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 2a10 10 0 1010 10h-10V2zM12 2a10 10 0 00-10 10h10V2z"></path><path d="M12 12l8.93 8.93"></path></svg>
+                </div>
+                <div class="skill-content">
+                  <h3>Machine Learning</h3>
+                  <p>Developing algorithms that learn from data to make predictions and decisions.</p>
+                  <div class="skill-tags">
+                    <span class="tag">Supervised Learning</span>
+                    <span class="tag">Scikit-learn</span>
+                    <span class="tag">TensorFlow</span>
+                    <span class="tag">Model Validation</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+            <div class="skill-card" data-category="data-science" data-index="1">
+              <div class="skill-card-inner">
+                <div class="skill-icon">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M22 12h-4l-3 9L9 3l-3 9H2"></path></svg>
+                </div>
+                <div class="skill-content">
+                  <h3>Advanced Analytics</h3>
+                  <p>Leveraging complex analytical techniques to extract deeper insights from data.</p>
+                  <div class="skill-tags">
+                    <span class="tag">Predictive Modeling</span>
+                    <span class="tag">Time Series</span>
+                    <span class="tag">Cluster Analysis</span>
+                    <span class="tag">NLP</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+            <div class="skill-card" data-category="data-science" data-index="2">
+              <div class="skill-card-inner">
+                <div class="skill-icon">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M8 9l3 3-3 3M13 15h3"></path><path d="M20 4H4a2 2 0 00-2 2v12a2 2 0 002 2h16a2 2 0 002-2V6a2 2 0 00-2-2z"></path></svg>
+                </div>
+                <div class="skill-content">
+                  <h3>Programming</h3>
+                  <p>Writing code to manipulate, analyze, and visualize data efficiently.</p>
+                  <div class="skill-tags">
+                    <span class="tag">Python</span>
+                    <span class="tag">R</span>
+                    <span class="tag">SQL</span>
+                    <span class="tag">Pandas</span>
+                    <span class="tag">NumPy</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+            <div class="skill-card" data-category="data-science" data-index="3">
+              <div class="skill-card-inner">
+                <div class="skill-icon">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4"></path><polyline points="17 8 12 3 7 8"></polyline><line x1="12" y1="3" x2="12" y2="15"></line></svg>
+                </div>
+                <div class="skill-content">
+                  <h3>Big Data</h3>
+                  <p>Working with large, complex datasets that exceed traditional data processing capabilities.</p>
+                  <div class="skill-tags">
+                    <span class="tag">Hadoop</span>
+                    <span class="tag">Spark</span>
+                    <span class="tag">Data Warehousing</span>
+                    <span class="tag">NoSQL</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="page-indicators" id="pageIndicators"></div>
+      </div>
+    </section>
+  
 
-				<!-- Footer -->
-					<footer id="footer">
-						<section>
-							<form method="post" action="#">
-								<div class="fields">
-									<div class="field">
-										<label for="name">Name</label>
-										<input type="text" name="name" id="name" />
-									</div>
-									<div class="field">
-										<label for="email">Email</label>
-										<input type="text" name="email" id="email" />
-									</div>
-									<div class="field">
-										<label for="message">Message</label>
-										<textarea name="message" id="message" rows="3"></textarea>
-									</div>
-								</div>
-								<ul class="actions">
-									<li><input type="submit" value="Send Message" /></li>
-								</ul>
-							</form>
-						</section>
-						<section class="split contact">
-							<section>
-								<h3>Phone</h3>
-								<p><a href="#">+254707534359</a></p>
-							</section>
-							<section>
-								<h3>Email</h3>
-								<p><a href="#">periswangari633@gmail.com</a></p>
-							</section>
-							<section>
-								<h3>Socials</h3>
-								<ul class="icons alt">
-										<li><a href="https://www.linkedin.com/in/periswangari/" target="_blank" class="icon brands alt fa-linkedin"><span class="label">LinkedIn</span></a></li>
-									<li><a href="https://github.com/PerisN" target="_blank" class="icon brands alt fa-github"><span class="label">GitHub</span></a></li>
-								</ul>
-							</section>
-						</section>
-					</footer>
+    <!-- Project Section -->
+    <section id="projects">
+      <div class="section-heading">
+        <h2>Recent Projects</h2>
+        <div class="heading-line"></div>
+        <p>Here are some of my recent projects that showcase my skills and expertise in data analysis, business analysis and data science.</p>
+      </div>
+      <div class="cards">
+        <!-- Project 1 -->
+        <div class="card" data-index="0" style="--card-index: 0;">
+          <div class="card__inner">
+            <div class="card__image-container">
+              <img
+                class="card__image"
+                src="https://images.unsplash.com/photo-1620207418302-439b387441b0?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1200&q=100"
+                alt="Project 1 Image"
+              />
+            </div>
+            <div class="card__content">
+              <h1 class="card__title">Stock Recommendation App</h1>
+              <p class="card__description">
+                Applied K-means clustering to segment customers based on purchasing behavior, resulting in a 28% increase in targeted marketing effectiveness and a 15% boost in customer retention.
+              </p>
+              <div class="skill-tags">
+                <span class="skill-tag">Time Series</span>
+                <span class="skill-tag">API Integration</span>
+                <span class="skill-tag">Python</span>
+                <span class="skill-tag">Streamlit</span>
+                <span class="skill-tag">LLMs</span>
+                <span class="skill-tag">Dashboards</span>
+              </div>
+              <div class="card__footer">
+                <a class="card__button" href="https://github.com/your-username/project-link" target="_blank">
+                  View on GitHub
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
 
-				<!-- Copyright-->
-					<div id="copyright">
-						<ul><li> </li><li> <a href="#"</a></li></ul>
-					</div> 
+        <!-- Project 2 -->
+        <div class="card" data-index="1" style="--card-index: 1;">
+          <div class="card__inner">
+            <div class="card__image-container">
+              <img
+                class="card__image"
+                src="https://images.unsplash.com/photo-1620207418302-439b387441b0?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1200&q=100"
+                alt="Project 2 Image"
+              />
+            </div>
+            <div class="card__content">
+              <h1 class="card__title">Healthcare Question & Answer System</h1>
+              <p class="card__description">
+                Developed a time series forecasting model using ARIMA and Prophet to predict monthly sales with 92% accuracy. The model helped optimize inventory management and reduce costs by 18% for a retail company.
+              </p>
+              <div class="skill-tags">
+                <span class="skill-tag">RAGs</span>
+                <span class="skill-tag">LLMs</span>
+                <span class="skill-tag">Streamlit</span>
+                <span class="skill-tag">SQL</span>
+                <span class="skill-tag">Containerization</span>
+              </div>
+              <div class="card__footer">
+                <a class="card__button" href="https://github.com/your-username/project-link" target="_blank">
+                  View on GitHub
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
 
-			</div>
+        <!-- Project 3 -->
+        <div class="card" data-index="2" style="--card-index: 2;">
+          <div class="card__inner">
+            <div class="card__image-container">
+              <img
+                class="card__image"
+                src="https://images.unsplash.com/photo-1620207418302-439b387441b0?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1200&q=100"
+                alt="Project 3 Image"
+              />
+            </div>
+            <div class="card__content">
+              <h1 class="card__title">Reddit Sentiment Analyzer</h1>
+              <p class="card__description">
+                Automated the extraction and analysis of skincare discussions from selected subreddits. Used configurable search terms to collect posts, performed sentiment analysis, identified trending topics and visualized consumer insights to support data-driven marketing and product strategies. 
+              </p>
+              <div class="skill-tags">
+                <span class="skill-tag">ETL</span>
+                <span class="skill-tag">Web Scraping</span>
+                <span class="skill-tag">Sentiment Analysis</span>
+                <span class="skill-tag">Topic Modeling</span>
+                <span class="skill-tag">NLP</span>
+                <span class="skill-tag">Market Research</span>
+              </div>
+              <div class="card__footer">
+                <a class="card__button" href="https://github.com/PerisN/Reddit-Product-Sentiment-Analytics" target="_blank">
+                  View on GitHub
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
 
-		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/jquery.scrollex.min.js"></script>
-			<script src="assets/js/jquery.scrolly.min.js"></script>
-			<script src="assets/js/browser.min.js"></script>
-			<script src="assets/js/breakpoints.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
+        <!-- View All Projects Button -->
+        <div class="view-all-projects">
+          <a href="https://github.com/PerisN" class="btn" target="_blank">View All Projects</a>
+        </div>  
+      </div>
+    </section>
 
-	</body>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact fade-in">
+      <div class="section-heading">
+          <h2>Let's Connect</h2>
+          <div class="heading-line"></div>
+          <p>Have a project in mind or want to discuss opportunities? Reach out!</p>
+      </div>
+      
+      <div class="contact-container">
+          <!-- Contact Form -->
+          <div class="contact-form-container">
+            <form action="https://formspree.io/f/mrbpnwda" method="POST" class="contact-form">
+              <div class="form-group">
+                      <label for="name">Name</label>
+                      <input type="text" id="name" placeholder="Your Name" required>
+                  </div>
+                  <div class="form-group">
+                      <label for="email">Email</label>
+                      <input type="email" id="email" placeholder="Your Email" required>
+                  </div>
+                  <div class="form-group">
+                      <label for="subject">Subject</label>
+                      <input type="text" id="subject" placeholder="Subject">
+                  </div>
+                  <div class="form-group">
+                      <label for="message">Message</label>
+                      <textarea id="message" placeholder="Your Message" required></textarea>
+                  </div>
+                  <button type="submit" class="btn-submit">Send Message</button>
+              </form>
+          </div>
+          
+          <!-- Contact Information -->
+          <div class="contact-info">
+              <h3>Contact Information</h3>
+              <div class="contact-details">
+                  <div class="contact-item">
+                      <div class="contact-icon">
+                          <i class="material-icons">email</i>
+                      </div>
+                      <div class="contact-text">
+                          <h4>Email</h4>
+                          <p><a href="mailto:periswangarianalyst@gmail.com">periswangarianalyst@gmail.com</a></p>
+                      </div>
+                  </div>
+                  <div class="contact-item">
+                      <div class="contact-icon">
+                          <i class="material-icons">location_on</i>
+                      </div>
+                      <div class="contact-text">
+                          <h4>Location</h4>
+                          <p>Nairobi, Kenya</p>
+                      </div>
+                  </div>
+              </div>
+              
+              <!-- Social Links -->
+              <div class="social-links">
+                <h4>Connect With Me</h4>
+                <div class="social-icons">
+                    <a href="mailto:periswangarianalyst@gmail.com" class="social-icon">
+                        <img src="assets/icons/email.svg" alt="Email">
+                    </a>
+                    <a href="https://linkedin.com/in/periswangari" target="_blank" class="social-icon" aria-label="LinkedIn">
+                        <img src="assets/icons/linkedin.svg" alt="LinkedIn">
+                    </a>
+                    <a href="https://github.com/PerisN" target="_blank" class="social-icon">
+                        <img src="assets/icons/github.svg" alt="GitHub">
+                    </a>
+                    <a href="https://leetcode.com/PerisN" target="_blank" class="social-icon" aria-label="LeetCode">
+                        <img src="assets/icons/leetcode.svg" alt="LeetCode">
+                    </a>
+                </div>
+            </div>
+          </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <p>&copy; 2025 Peris Wangari. All rights reserved.</p>
+        </div>
+    </footer>
+
+  <script src="js/section.js" defer></script> 
+  <script src="js/skills.js" defer></script> 
+  <script src="js/projects.js" defer></script>
+
+</body>
 </html>
