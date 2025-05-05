@@ -99,7 +99,7 @@ document.addEventListener('DOMContentLoaded', function() {
         // Apply brightness filter
         cardInner.style.filter = `brightness(${valueAtPercentage({
           from: 1,
-          to: 0.6,
+          to: 0.85,
           percentage: visibilityPercentage
         })})`;
       });
