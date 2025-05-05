@@ -12,8 +12,15 @@ htmlCopy<!DOCTYPE html>
 <body>
     <!-- Navigation Bar -->
     <nav class="navbar" role="navigation" aria-label="Main Navigation">
+      <!-- Hamburger menu toggle -->
+        <div class="menu-toggle">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <!-- Navigation links -->
         <ul class="nav-links">
-            <li><a href="#about">ABOUT</a></li>
+            <li><a href="#about">ABOUT ME</a></li>
             <li><a href="#skills">SKILLS</a></li>
             <li><a href="#projects">PROJECTS</a></li>
             <li><a href="#contact">CONTACT</a></li>
@@ -22,30 +29,42 @@ htmlCopy<!DOCTYPE html>
     
     <div id="section-dots" class="section-navigation"></div>
 
-    <section id="about" class="about fade-in">
-        <div class="about-content">
-            <!-- Profile Image -->
-            <div class="about-img-container">
-                <img src="assets/images/laptop.png" alt="My Profile Picture" class="about-img slide-in-left">
-            </div>
-    
-            <!-- Introduction Text -->
-            <div class="about-text slide-in-right">
-                <h1>Hello 👋, I'm <span class="highlight">Peris!</span> </h1>
-                <p>Data Scientist and Analyst with 2+ years of experience turning complex data into actionable insights that drive smarter decisions and impact.</p>
-                <p>With a background in finance and experience in fintech and retail, I understand how data drives real business decisions. Whether it’s building models, visualizing insights or cleaning up messy datasets, I’m always focused on making data useful.</p>
-                <p>Outside of data, I’m usually talking to my cat and plants or chasing down a creative idea.</p>
-                <p>My ideal role? One where I can keep learning, contribute to impactful projects and help organizations make smarter, data-driven decisions.</p>
-                <!-- Buttons -->
-                <div class="about-buttons">
-                    <a href="assets/CV.pdf" download class="about-button">Download CV</a>
-                    <a href="#contact" class="about-button">Get in Touch</a>
-                </div>
-            </div>
+    <section id="about" class="about">
+      <div class="about-content">
+        <!-- Profile Image -->
+        <div class="about-img-container">
+          <img src="assets\images\Profile Image.svg" alt="Profile picture of Peris Wangari" class="about-img">
         </div>
+    
+        <div class="about-text">
+          <!-- Full bio for desktop/tablet -->
+          <div class="about-text-full">
+            <h1>Hello 👋, I'm Peris!</h1>
+            <p>Data Scientist and Analyst with 2+ years of experience turning data into actionable insights that drive smarter decisions and impact.</p>
+            <p>With a background in finance and economics and experience in fintech and retail, I understand how data drives real business decisions. Whether it's cleaning up messy datasets, visualizing insights or building models, I am always focused on making data useful.</p>
+            <p>Currently, I'm diving deeper into NLP and large language models (LLMs), exploring how they can enhance retrieval, search and human-like interactions through tools like RAGs and Transformers.</p>
+            <p>Outside of data, I'm usually talking to my cat and plants or chasing down a creative idea.</p>
+            <p>My ideal role? One where I can keep learning, contribute to impactful projects and help organizations make smarter, data-driven decisions. I am open to full-time roles, contract roles and freelance projects.</p>
+          </div>
+    
+          <!-- Condensed bio for mobile -->
+          <div class="about-text-mobile">
+            <h2>Hello 👋, I'm Peris!</h2>
+            <p>Data Scientist and Analyst with 2+ years experience turning data into actionable insights. Finance & economics background with fintech and retail expertise.</p>
+            <p>Currently exploring NLP and LLMs for enhanced search and human-like interactions.</p>
+            <p>Looking for roles where I can keep learning and help organizations make data-driven decisions. Open to full-time, contract, and freelance opportunities.</p>
+          </div> 
+
+          <!-- Call-to-action buttons moved here, inside the about-text div -->
+          <div class="about-buttons">
+            <a href="assets/PERIS_WANGARI_CV.pdf" download class="about-button">📄 Download CV</a>
+            <a href="#contact" class="about-button">📬 Get in Touch</a>
+            <a href="#projects" class="about-button">📂 View Projects</a>
+          </div> 
+        </div>      
+      </div>
     </section>
-
-
+    
     <!-- Skills Section -->
     <section id="skills" class="skills-section">
       <div class="section-heading">
@@ -55,7 +74,7 @@ htmlCopy<!DOCTYPE html>
         <div class="filter-pills-wrapper">
           <div class="filter-pills">
             <button class="filter-pill active" data-filter="data-analysis">Data Analysis</button>
-            <button class="filter-pill" data-filter="business-analysis">Business Analysis</button>
+            <!-- <button class="filter-pill" data-filter="business-analysis">Business Analysis</button> -->
             <button class="filter-pill" data-filter="data-science">Data Science</button>
           </div>
         </div>
@@ -347,9 +366,7 @@ htmlCopy<!DOCTYPE html>
             </div>
             <div class="card__content">
               <h1 class="card__title">Reddit Sentiment Analyzer</h1>
-              <p class="card__description">
-                Automated the extraction and analysis of skincare discussions from selected subreddits. Used configurable search terms to collect posts, performed sentiment analysis, identified trending topics and visualized consumer insights to support data-driven marketing and product strategies. 
-              </p>
+              <p class="card__description">Generated comprehensive skincare market intelligence by automating the extraction and analysis of Reddit community discussions, identifying consumer sentiment patterns and visualizing trending topics—transforming unstructured social data into actionable insights that directly informed data-driven marketing and product strategies.</p>
               <div class="skill-tags">
                 <span class="skill-tag">ETL</span>
                 <span class="skill-tag">Web Scraping</span>
@@ -461,6 +478,7 @@ htmlCopy<!DOCTYPE html>
     </footer>
 
   <script src="js/section.js" defer></script> 
+  <script src="js/about.js" defer></script>
   <script src="js/skills.js" defer></script> 
   <script src="js/projects.js" defer></script>
 
